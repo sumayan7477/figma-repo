@@ -23,22 +23,14 @@
 .nav{
     
     overflow: hidden;
-    background-color: #ffffff;
-    
-    top: 0;
+    background-color: #ffffff;  
     width: 100%;
-    z-index: 99;
-    
-    
-    
+    z-index: 99;    
 }
-
-  /* navbar-steart */
   .nav2{
     
     overflow: hidden;
     background-color:transparent;
-   
     top: 0;
     width: 100%;
     z-index: 99;
@@ -126,16 +118,20 @@
 
 .main {
   display: grid;
-  grid:
-
-'logo logo logo searcharea searcharea searcharea'
+  margin-left: 0px;
+  grid-template: 
+    'logo logo logo searcharea searcharea searcharea'
   'nav-item nav-item nav-item nav-item nav-item nav-item'
+;
 
 }
-nav{
-    margin-left: 0px;
+.nav{
+  width: 100%;
 }
 
+.loge img{
+    width: 50%;
+}
 
 .search{
     display: flex;
@@ -200,7 +196,7 @@ nav{
 
 .trkloc{
     background-color: #ffffff;
-    height: 150px;
+    height: 170px;
     width: 80%;
     position: absolute;
     top: 490px;
@@ -224,7 +220,7 @@ nav{
        
 }
 .track h2{
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
     font-size: 35px;
     color: var(--gray-900);
     width: 80%;
@@ -259,19 +255,29 @@ nav{
  width: 100%;
  left: 0%;
  padding: 10px;
+ height: 310px;
  
 }
 
 .track h2{
     font-size: 20px;
 }
-
+.track{
+    height: 176px;
+}
 .trkloc >div{
-    margin-left: 10%;
+    
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 330px;
 }
 
 .track input{
     width: 100%;
+}
+
+.hight{
+    height: 270px;
 }
 
 
@@ -666,7 +672,10 @@ padding: 10px;
 }
 
 .slidr div{
-    background: url(IMAGE/Switchbg.png) no-repeat ;
+    /* background: url(IMAGE/Switchbg.png) no-repeat ; */
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 35px;
     width: 70px;
     height: 70px;
     display: flex;
@@ -674,8 +683,9 @@ padding: 10px;
 }
 
 .slidr div img{
-    margin: -8px 0px 0px 16px;
+    margin:0px auto;
 }
+
 
 
 
@@ -689,12 +699,42 @@ padding: 10px;
     .climg img{
         width: 60%;
         margin-left: 60px;
+        height: 200px;
+        margin-right: 50px;
         
     }
     .rvw{
         margin-left: 0;
+        height: 250px;
     }
+
+   
     
+    .serv{
+    height: 250px;
+    }
+    .rvw > p{
+        margin: 50px 0 10px 0;
+       line-height: 10px;
+        font-size: 10px;
+      
+    }
+
+    .client h1{
+        margin-bottom: 20px;
+    }
+
+    
+.slidr div{
+    
+    width: 30px;
+    height: 30px;
+   
+}
+.slidr{
+    margin-top: 5px;
+}
+
 }
 
 
@@ -773,6 +813,10 @@ padding: 10px;
 .blogs{
     margin: 20px 30px 0 20px;
 
+}
+
+.blogs> img{
+    width: 100%;
 }
 .blogs> p{
     color: var(--gray-901);
@@ -1190,9 +1234,21 @@ service-section-starts-here
 
 .uporimg{
     position: absolute;
-    top: 194px;
+    top: 170px;
     left: 30px;
+    background:#FFF;
+    width: 50px;
+    height: 50px;
+    border: 1px white solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
     
+}
+
+.uporimg img{
+     width: 35px;
+     height: 35px;
 }
 
 .whbgimg{
